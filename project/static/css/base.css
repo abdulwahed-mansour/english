@@ -3,13 +3,12 @@ body {
 	font-size: 1.1rem;
 	font-weight: 500;
 	line-height: 1.7;
-	color: #212529;
-	-webkit-text-size-adjust: 100%;
+	color: #1a1b1d;
+	
 }
 
 .nav-link {
 	display: block;
-	padding: .7rem 1rem;
-	text-decoration: none;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    padding: .7rem 1rem;
+    
 }
