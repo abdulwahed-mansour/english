@@ -37,7 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # Third-party
+    #'allauth',
+    #'allauth.account',
+    #'crispy_forms',
+    # 'debug_toolbar',
+
+    # Local
+    #'accounts',
     'pages',
+
 ]
 
 MIDDLEWARE = [
