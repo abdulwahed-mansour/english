@@ -1,0 +1,15 @@
+body {
+	font-family: var(--bs-font-sans-serif);
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 1.7;
+	color: #212529;
+	-webkit-text-size-adjust: 100%;
+}
+
+.nav-link {
+	display: block;
+	padding: .7rem 1rem;
+	text-decoration: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
