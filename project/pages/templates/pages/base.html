@@ -39,29 +39,55 @@
   </head>
   <body>
     
-<header>
+  <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md shadow-sm navbar-dark fixed-top bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Logo navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Result</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="#">One 1</a></li>
+                        <li><a class="dropdown-item" href="#">Tow 2</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#">Some Link 3</a></li>
+                    </ul>
+                </li>
+              </ul>
+              
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Register</button>
+                <button class="btn btn-primary" type="button">Login</button>
+              </div>
 
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      
-    <nav class="my-2 my-md-0 me-md-3">
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <a class="p-2 text-dark" href="{% url 'about' %}">Home</a>
-        <a class="p-2 text-dark" href="{% url 'about' %}">About</a>
 
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-    </nav>
-        <a class="btn btn-outline-primary" href="#">Sign up</a>
-    </div>
-  </div>
-</header>
 
 <main>
 
